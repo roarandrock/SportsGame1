@@ -73,7 +73,6 @@ def fill_db():
     db.close()
 
 # TODO connect to mongoDB at startup
-# TODO make Flask site that connects to mongoDB and lets user modify playernames
 
 # # run functions
 # clean_db()

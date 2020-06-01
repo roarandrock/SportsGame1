@@ -4,7 +4,6 @@ import sqlite3
 # then I need to keep the instance until it's time to update the database and make a new instance
 
 # TODO replace sql with mongodb connection
-# TODO setup git for this
 
 # Player class
 class Player():
@@ -29,7 +28,6 @@ class Player():
             db = sqlite3.connect('data/db1')
             db.row_factory = sqlite3.Row
             cursor = db.cursor()
-            # TODO compare to database version before updating?
             # player_0 = cursor.execute("select * from player where id=?", (self.id,)).fetchone()
             new_tile = self.current_tile
             cursor.execute("update players set current_tile = ? where id = ?", (new_tile, self.id,))

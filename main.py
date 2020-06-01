@@ -150,7 +150,6 @@ def runGame():
 
             current_gui.top_message = "Computer turn complete. Human's turn"
 
-        # TODO implement moves made by player and computer before looping again
         current_field = implement_moves(current_field, player_move_commit_list)
 
         # update board
